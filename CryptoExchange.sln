@@ -15,6 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Directory.Build.props = Directory.Build.props
 		global.json = global.json
 		stylecop.json = stylecop.json
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoExchange.Tests", "CryptoExchange.Tests\CryptoExchange.Tests.csproj", "{958D1DA3-B36A-4551-8CE5-6F08E01FEF86}"
