@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoExchange.WebApi", "CryptoExchange.WebApi\CryptoExchange.WebApi.csproj", "{0B4B9EE4-EB50-42AE-9CB0-3CAA255EEBFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoExchange.Domain", "CryptoExchange.Domain\CryptoExchange.Domain.csproj", "{6A4B5347-F3D3-42F7-B7BA-0783ACA8672F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoExchange.Console", "CryptoExchange.Console\CryptoExchange.Console.csproj", "{688ACC14-966B-48F1-B7F4-11CE013330D0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{88533257-FE43-44A0-9534-876BE60C8E2E}"
+	ProjectSection(SolutionItems) = preProject
+		.dockerignore = .dockerignore
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		cryptoexchange.ruleset = cryptoexchange.ruleset
+		Directory.Build.props = Directory.Build.props
+		global.json = global.json
+		stylecop.json = stylecop.json
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoExchange.Tests", "CryptoExchange.Tests\CryptoExchange.Tests.csproj", "{958D1DA3-B36A-4551-8CE5-6F08E01FEF86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CryptoExchange.TestData", "CryptoExchange.TestData\CryptoExchange.TestData.csproj", "{33AB4A75-88AD-446A-AE49-8AEF00182D22}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0B4B9EE4-EB50-42AE-9CB0-3CAA255EEBFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B4B9EE4-EB50-42AE-9CB0-3CAA255EEBFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B4B9EE4-EB50-42AE-9CB0-3CAA255EEBFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B4B9EE4-EB50-42AE-9CB0-3CAA255EEBFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A4B5347-F3D3-42F7-B7BA-0783ACA8672F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A4B5347-F3D3-42F7-B7BA-0783ACA8672F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A4B5347-F3D3-42F7-B7BA-0783ACA8672F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A4B5347-F3D3-42F7-B7BA-0783ACA8672F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{688ACC14-966B-48F1-B7F4-11CE013330D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{688ACC14-966B-48F1-B7F4-11CE013330D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{688ACC14-966B-48F1-B7F4-11CE013330D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{688ACC14-966B-48F1-B7F4-11CE013330D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{958D1DA3-B36A-4551-8CE5-6F08E01FEF86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{958D1DA3-B36A-4551-8CE5-6F08E01FEF86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{958D1DA3-B36A-4551-8CE5-6F08E01FEF86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{958D1DA3-B36A-4551-8CE5-6F08E01FEF86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33AB4A75-88AD-446A-AE49-8AEF00182D22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33AB4A75-88AD-446A-AE49-8AEF00182D22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33AB4A75-88AD-446A-AE49-8AEF00182D22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33AB4A75-88AD-446A-AE49-8AEF00182D22}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
