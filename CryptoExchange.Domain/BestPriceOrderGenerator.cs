@@ -52,9 +52,8 @@ public class BestPriceOrderGenerator
             if (!balanceByExchange.TryGetValue(exchangeId, out decimal accountBalance))
             {
                 // no balance found, retrieve it from the account
-                balanceByExchange.Add(
-                    exchangeId,
-                    _account.GetAccountBalance(exchangeId, balanceSymbol));
+                accountBalance = _account.GetAccountBalance(exchangeId, balanceSymbol);
+                balanceByExchange.Add(exchangeId, accountBalance);
             }
 
             decimal amountTradeable;
