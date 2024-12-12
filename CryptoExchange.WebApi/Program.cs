@@ -2,6 +2,7 @@ using CryptoExchange.Domain;
 using CryptoExchange.Domain.Repositories;
 using CryptoExchange.TestData;
 using CryptoExchange.WebApi;
+using CryptoExchange.WebApi.Binding;
 using Microsoft.AspNetCore.Mvc;
 
 WebApplicationBuilder builder = WebApplication.CreateSlimBuilder(args);
@@ -30,8 +31,8 @@ RouteGroupBuilder bestPriceApi = app.MapGroup("/best-price");
 bestPriceApi.MapGet(
     "/",
     async (
-        OrderType orderType,
-        decimal amount,
+        [FromQuery] EnumBinding<OrderType> orderType,
+        [FromQuery] decimal amount,
         [FromServices] MetaExchange exchange,
         [FromServices] IAccountRepository repository,
         CancellationToken cancellationToken) =>
