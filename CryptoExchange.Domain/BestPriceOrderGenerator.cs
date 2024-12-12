@@ -80,7 +80,7 @@ public class BestPriceOrderGenerator
                     IsPartial = order.Amount != amountTradeable,
                 };
 
-                // Deduct traded Crypto and update balance
+                // Deduct traded cost or amount and update balance
                 if (orderType == OrderType.Buy)
                 {
                     decimal costInEuro = amountTradeable * order.Price;

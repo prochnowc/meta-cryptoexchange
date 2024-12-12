@@ -39,8 +39,8 @@ while (true)
     await foreach (BestPriceOrder order in bestPriceOrders)
     {
         AnsiConsole.WriteLine(
-            $"Execute Order with Id '{order.MatchedOrder.Id}' at Exchange '{order.ExchangeId}'"
-            + $" Amount: {order.MatchedOrder.Amount} Price: {order.MatchedOrder.Price} IsPartial: {order.IsPartial}");
+            $"Matched Order with Id '{order.MatchedOrder.Id}' at Exchange '{order.ExchangeId}'"
+            + $" Amount: {order.MatchedOrder.Amount} Price: {order.MatchedOrder.Price}, Matched amount: {order.Amount} Partial Order: {order.IsPartial}");
 
         totalAmount += order.Amount;
     }
